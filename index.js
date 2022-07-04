@@ -196,7 +196,6 @@ var z = Math.floor((number % 100) % 10);
 var speakx;
 var speaky;
 var speakz;
-if (x > 0) {
   if (x == 1) {
     speakx = "Một";
   } else if (x == 2) {
@@ -216,8 +215,7 @@ if (x > 0) {
   } else if (x == 9) {
     speakx = "Chín";
   }
-}
-if (y > 0) {
+
   if (y == 1) {
     speaky = "Một";
   } else if (y == 2) {
@@ -237,8 +235,8 @@ if (y > 0) {
   } else if (y == 9) {
     speaky = "Chín";
   }
-}
-if (z > 0) {
+
+
   if (z == 1) {
     speakz = "Một";
   } else if (z == 2) {
@@ -258,7 +256,7 @@ if (z > 0) {
   } else if (z == 9) {
     speakz = "Chín";
   }
-}
+
 if (x > 0 && y > 0 && z > 0) {
   console.log(speakx, "trăm", speaky, "mươi", speakz);
 }
